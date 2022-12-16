@@ -1,0 +1,37 @@
+>> Lecture01 OOP
+
+1. Class
+-> properties (fields) --> ตัวแปร --> noun
+-> actions (method) --> verb
+	- constructor
+	- method ธรรมดา
+-> overloading method
+	- Name method ซ้ำ แต่คนละ input
+-> this --> class, object มันเอง
+	- this.faceValue
+	- this.roll()
+	- this(1) = การเรียก constructor
+-> static --> belong to class
+	- เรียกได้โดยตรงจาก class
+	- ถ้าไม่มี static --> belong to object
+	ต้องเรียกจาก object เท่านั้น
+
+*** Encapsulation ***
+
+private int faceValue; --> hide
+setFaceValue()	       --> setter
+getFaceValue()	       --> getter
+
+-> package "java.lang.*" ไม่ต้อง import ใช้ได้เลย
+	   java.util เช่น Scanner ต้อง import
+
+Summarize
+Class SimpleDice
+	1) properties
+	private int faceValue;
+	2) method
+	2.1) constructor
+	2.2) getter & setter
+	2.3) usage methods -> roll()
+	2.4) standard methods
+		toString, equals

@@ -1,0 +1,37 @@
+file.jar --> run & zip
+
+1) java -jar file.jar ต้องมีไฟล์  file.class เพื่อไว้ run program
+2) zip --> file.java teacher and ta can check
+
+
+Lecture01 - Class & OOP
+-class = new data type (own data type)
+  properties - variable
+  actions - method
+    constructor
+    getter & setter
+    toString, euals
+    etc.
+- Encapsulation = การซ่อน ไม่อนุญาตให้ผู้ใช้แก้ตัวแปรได้โดยตรง
+  access modifier -> private & getter/setter
+     ไม่จำเป็นต้องมี getter+setter พร้อมกัน ***สร้างแค่ที่ต้องการให้ใช้ก็พอ***
+
+Lecture02 - Inheritance
+- ทำให้ code สั้นลง ลด errors
+- extends
+- overriding
+- casting
+  child is-a parent --> ok
+  parent is-a child --> casting!
+- Polymorphism = same code, different actions (results)
+
+**1 java file มีกี่ class ก็ได้ แต่มีได้แค่ 1 public class
+
+- class createion (ClassCreation.java)
+- super vs this (Bike1.java)
+- final & static --> ลูกแก้ไขต่อไม่ได้
+- Protected
+  private เฉพาะตัวเอง ---> แดง
+  public ทุกคน ---> เขียว
+    ไม่เติม (default = package เดียวกัน) ---> ฟ้า
+  protected ให้ลูก ---> เหลือง

@@ -1,0 +1,49 @@
+ทบทวน Lecture2 - Inheritance 
+
+-> Polymorphism
+	>> same code, different actions
+	
+	Ex.1
+
+	Studdent[] students = new Student[10];
+	students[0] = new UnderGrad();
+	students[1] = new Grad();
+	for(Student s : students){
+		s.computeScore();
+	//Grad คำนวณแบบนึง Under อีกแบบนึง
+	}
+
+
+	Ex.2
+
+	public void printScore(Student s){
+		double score = s.computeScore();
+		System.out.println(score);	
+		if (s instanceof UnderGrad){
+			
+		}
+	}
+
+
+	Ex.3
+
+	Student s1 = new UnderGrad();
+	UnderGrad g = (UnderGrad) s1;  //เติมในวงเล็บทำให้ไม่ error
+
+
+-> Overriding method
+-> super() // เรียก constructor ของแม่, super.score เรียก properties ของแม่, super.computeScore เรียก Method ของแม่
+-> final, static ---> cannot modify in SubClass
+
+
+
+Lecture03
+Abstract Class คือ class แม่ที่ "ไม่สมบูรณ์" เป็นต้นแบบ template
+	Abstract method -->บังคับว่าลูกต้องมี method เหล่านี้
+	subclass of abstract
+		- implement all abstract methods ให้ครบ
+	Abstract Class ไม่สามารถ new ได้
+
+Object Class
+	hashcode : Ex. ในไฟล์ Employee กับ company
+	clone : clone ได้ ต้อง สร้าง clone ใน class และ implements cloneable 

@@ -1,0 +1,21 @@
+Lecture 2: Inheritance
+	subclass <-> superclass (strong) is-a
+Lecture 3: Abstract
+	- class ที่รายละเอียดไม่ครบ
+Lecture 5: GUI
+Lecture 6: Thread
+Lecture 7: Graphics
+# jar, Graphics
+=============================
+Lecture 4: Interface
+	- Interface ไม่ใช่ class
+	- คล้ายๆ Abstract method
+	- new ไม่ได้
+	*- ทุก method ใน interface -> Abstract method ทั้งหมด ห้ามใส่ body
+	*- ตัวแปรทุกตัวใน interface -> ค่าคงที่ 
+	 	public static final (String LABLE = "Shape";)
+	- weak relationship --> "has, can"
+	- มีได้หลายความสามารถ --> มีได้หลาย interface (multiple inheritance)
+	- name convention --> Shape"able" , Compareable, Moveable ต้องมี able ต่อท้ายเสมอ 	
+
+	
